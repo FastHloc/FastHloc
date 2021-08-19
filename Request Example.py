@@ -12,7 +12,7 @@ def pivotPoints(symbol, timeframe, barId):
         return {'status':'Invalid', 'error': 'Invalid barId argument.'}
     
     # Make request to api
-    token = '4eadbf364f56a1aa1b679fc7e1249ffc'
+    token = # Insert your unique token here
     response = requests.get(f'https://www.fasthloc.co.uk/api/getbar.json?symbol={symbol}&timeframe={timeframe}&barid={str(barId)}&token={token}')
 
     # Verify server response
